@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Space+Grotesk&display=swap" rel="stylesheet">
 
+    <script src="js/build.js"></script>
+
 <title>SuperSubs</title>
     
 </head>
@@ -35,12 +37,15 @@
     <!--nav bar-->
     <nav class="nav-1">
         
+        <div class="line"></div>
+
         <div class="logo"><a href="index.html"><img src="/assets/images/logo.png"></a></div>
 
         <ul>     
 
-         <li><h2><a>About Us</a></h2></li>   
-         <li><h2><a>Subs of The Month</a></h2></li>
+         <li><h2><a href="../index.html"><b>Home</b></a></h2></li>  
+         <li><h2><a href="#about">About Us</a></h2></li>   
+         <li><h2><a href="#sotm">Subs of The Month</a></h2></li>
          <li><h2><a href="pages/build.html">Build a Sub</a></h2></li>
          <li><h2><a href="pages/checkout.html">Cart & Check Out</a></h2></li>
 
@@ -48,10 +53,9 @@
 
         <input name="Search" type="text" placeholder="Search...">
 
+        <div class="line"></div>
+
     </nav>
-
-
-    <div class="line"></div>
 
 
     <!--Hero section-->
@@ -62,14 +66,14 @@
         <h1>SUPERSUBS</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae magnam eligendi minima doloremque modi esse quis quam soluta deserunt, pariatur cupiditate quos harum ipsum quo explicabo eum reprehenderit sunt unde!</p>
 
-            <div class="btn-1">About Us</div>
-            <div class="btn-1">Subs of the Month</div>
+            <a href="#about"><div class="btn-1">About Us</div></a>
+            <a href="#sotm"><div class="btn-1">Subs of the Month</div></a>
 
         </div>
 
         <div class="half-2">
 
-            <div class="btn-1">BUILD YOUR SUB NOW!</div>
+            <div id="about" class="btn-1"><a href="pages/build.html">BUILD YOUR SUB NOW!</a></div>
 
         </div>
 
@@ -89,7 +93,7 @@
 
     <div class="about-half-1">
     <h1>About Us</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aut assumenda, et corporis asperiores nisi neque tenetur necessitatibus officiis. Ab excepturi mollitia, deleniti debitis veritatis iusto earum quae ullam aliquid.</p>
+    <p  id="sotm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aut assumenda, et corporis asperiores nisi neque tenetur necessitatibus officiis. Ab excepturi mollitia, deleniti debitis veritatis iusto earum quae ullam aliquid.</p>
     </div>
 
     <div class="about-half-2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114813.82243648611!2d28.014965496352783!3d-25.937459067862445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window!5e0!3m2!1sen!2sza!4v1684977613233!5m2!1sen!2sza" width="725" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
@@ -103,14 +107,101 @@
 
     <h1>SUBS OF THE MONTH</h1>
 
-    <div class="quarter-1"></div>
-    <div class="quarter-2"></div>
-    <div class="quarter-3"></div>
-    <div class="quarter-4"></div>
-    <div class="quarter-5"></div>
-    <div class="quarter-6"></div>
-    <div class="quarter-7"></div>
-    <div class="quarter-8"></div>
+    <div class="quarter-1">
+        <div class="card-sotm">
+            <h5><b>Big Boy</b></h5>
+            <div class="card-content-sotm">
+                <p><b>Bread:</b> white</p>
+                <p><b>Ingredients:</b> tomato, lettuce, onion, ham, turkey</p>
+                <p><b>Sauces:</b> mayo</p>
+                <p><b>Cost:</b> R120.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="quarter-2">
+        <div class="card-sotm">
+            <h5><b>Chigen and Ledus</b></h5>
+            <div class="card-content-sotm">
+                <p><b>Bread:</b> white</p>
+                <p><b>Ingredients: </b>lettuce, chicken, tomato</p>
+                <p><b>Sauces:</b> mayo</p>
+                <p><b>Cost:</b> R90.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="quarter-3">
+        <div class="card-sotm">
+            <h5><b>Let's Get This Bread</b></h5>
+            <div class="card-content-sotm">
+                <p><b>Bread:</b> bread</p>
+                <p><b>Ingredients:</b> bread, bread</p>
+                <p><b>Sauces:</b> bread-sauce</p>
+                <p><b>Cost:</b> R20.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="quarter-4">
+        <div class="card-sotm">
+            <h5><b>Tall</b></h5>
+            <div class="card-content-sotm">
+                <p><b>Bread:</b> brown</p>
+                <p><b>Ingredients:</b> ham, pickles, tomato, lettuce</p>
+                <p><b>Sauces:</b> hot</p>
+                <p><b>Cost:</b> R110.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="quarter-5">
+        <div class="card-sotm">
+            <h5><b>Gorlock The Destroyer</b></h5>
+            <div class="card-content-sotm">
+                <p><b>Bread:</b> baguette</p>
+                <p><b>Ingredients:</b> ham, steak, cucumber, lettuce, tomato, onion</p>
+                <p><b>Sauces: </b>tomato, mustard</p>
+                <p><b>Cost:</b> R90.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="quarter-6">
+        <div class="card-sotm">
+            <h5><b>Many Mayonnaise</b></h5>
+            <div class="card-content-sotm">  
+                <p><b>Bread: </b>Ciabatta</p>
+                <p><b>Ingredients: </b>ham, bacon, lettuce, tomato, onion</p>
+                <p><b>Sauces:</b>mayonnaise</p>
+                <p><b>Cost:</b> R80.00</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quarter-7">
+        <div class="card-sotm">
+            <h5><b>I AM FULL</b></h5>
+            <div class="card-content-sotm"> 
+                <p><b>Bread:</b>sourdough</p>
+                <p><b>Ingredients:</b>lettuce, tomato, cucumber, ham, onion</p>
+                <p><b>Sauces:</b>sweet-chilli</p>
+                <p><b>Cost:</b> R65.00</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quarter-8">
+        <div class="card-sotm">
+            <h5><b>Eric</b></h5>
+            <div class="card-content-sotm">
+                <p><b>Bread:</b> ciabatta</p>
+                <p><b>Ingredients:</b> gherkin, lettuce, tomato, onion, salami</p>
+                <p><b>Sauces:</b></p>
+                <p><b>Cost:</b> R95.00</p>
+            </div>
+        </div>
+    </div>
 
 
 </div>

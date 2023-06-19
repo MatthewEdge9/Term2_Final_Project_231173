@@ -3,10 +3,10 @@ html, body{
 }
 
 nav{
-    background-color: #ff000018;
+    position: fixed;
+    background-color: #fbe3e3;
     width: 100%;
     height: 100px;
-    padding-top: 5px;
     text-decoration: none;
 } 
 
@@ -42,9 +42,31 @@ a:link{
     color: black;
 }
 
-a:hover{
+nav a:hover{
     text-decoration: none;
     color: #fe4710;
+}
+
+.btn-1:hover{
+    color: #000000;
+    background-color: #aeff00;
+    border-color: #000000;
+    cursor: pointer;
+} 
+
+.btn-2:hover{
+    color: #000000;
+    background-color: #aeff00;
+    border-color: #000000;
+    cursor: pointer;
+}
+
+.form input:hover{
+    cursor: pointer;
+}
+
+.form label:hover{
+    cursor: pointer;
 }
 
 .btn-1{
@@ -62,7 +84,7 @@ a:hover{
 .line{
     width: 100%;
     height: 2px;
-    background-color: #00000024;
+    background-color: #d7adad;
 }
 
 img{
@@ -84,8 +106,9 @@ HOME PAGE
 .hero{
     background-color: #fbfbfb;
     width: 100%;
-    height: 630px;
+    height: 740px;
     margin: 0;
+    padding-top: 105px;
 }
 
 .half-1{
@@ -136,7 +159,7 @@ HOME PAGE
 .sotm{
     background-color: #ffffff;
     width: 100%;
-    height: 800px;
+    height: 820px;
     padding-left: 125px;
     padding-right: 0px;
 }
@@ -152,27 +175,42 @@ footer{
     height: 100px;
 }
 
-nav li{
+.nav-1 li{
+    width: 20%;
     display: inline;
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-right: 6%;
     height: 24px;
 }
 
+.nav-2 li{
+    width: 15%;
+    display: inline;
+    margin-right: 6%;
+    height: 24px;
+}
 
 nav ul{
+    width: 70%;
     padding: 38px;
     margin-left: 50px;
+    margin-bottom: 8px;
     display: inline-flex;
 }
 
 nav input{
+    position: absolute;
     float: right;
     margin-top: 34px;
     margin-right: 38px;
 }
 
 .nav-1{
+    width: 100%;
+    height: 110px;
+    text-decoration: none;
+}
+
+.nav-2{
     width: 100%;
     height: 110px;
     text-decoration: none;
@@ -189,7 +227,7 @@ nav input{
     background-size: cover;
     width: 22%;
     height: 35%;
-    display: inline-block;
+    display: inline-table;
     margin-right: 1%;
     margin-bottom: 1%;
 }
@@ -200,7 +238,7 @@ nav input{
     background-size: cover;
     width: 22%;
     height: 35%;
-    display: inline-block;
+    display: inline-table;
     margin-right: 1%;
     margin-bottom: 1%;
 }
@@ -211,7 +249,7 @@ nav input{
     background-size: cover;
     width: 22%;
     height: 35%;
-    display: inline-block;
+    display: inline-table;
     margin-right: 1%;
     margin-bottom: 1%;
 }
@@ -222,7 +260,7 @@ nav input{
     background-size: cover;
     width: 22%;
     height: 35%;
-    display: inline-block;
+    display: inline-table;
     margin-right: 1%;
     margin-bottom: 1%;
 }
@@ -233,7 +271,7 @@ nav input{
     background-size: cover;
     width: 22%;
     height: 35%;
-    display: inline-block;
+    display: inline-table;
     margin-right: 1%;
     margin-bottom: 1%;
 }
@@ -244,7 +282,7 @@ nav input{
     background-size: cover;
     width: 22%;
     height: 35%;
-    display: inline-block;
+    display: inline-table;
     margin-right: 1%;
     margin-bottom: 1%;
 }
@@ -257,7 +295,7 @@ nav input{
     background-size: cover;
     width: 22%;
     height: 35%;
-    display: inline-block;
+    display: inline-table;
     margin-right: 1%;
     margin-bottom: 1%;
 }
@@ -268,12 +306,36 @@ nav input{
     background-size: cover;
     width: 22%;
     height: 35%;
-    display: inline-block;
+    display: inline-table;
     margin-right: 1%;
     margin-bottom: 1%;
 }
 
+.card-sotm{
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #d7adad;
+}
 
+.card-content-sotm{
+    width: 100%;
+    height: 260px;
+    background-color: #ffffff85;
+    margin: 0;
+    padding-left: 10px;
+    margin-bottom: 1px;
+    opacity: 0;
+}
+
+.card-content-sotm:hover{
+    opacity: 1;
+}
+
+.sotm h5{
+    margin: 0;
+    padding-bottom: 10px;
+    background-color: #ffffff85;
+}
 
 
 /*//////////////////////////////////////////////////////////////////////////
@@ -283,48 +345,53 @@ BUILD A SUB PAGE
 
 .build{
     width: 100%;
-    height: 690px;
+    height: 800px;
 }
 
 .form{
-    background-color: #ff000018;
+    background-color: #ecc4c4;
     width: 70%;
-    height: 600px;   
+    height: 650px;   
     margin-top: 21px;
     margin-left: 3%;
     display: inline-block;
     margin-right: 2.4%;
     border-radius: 5px;
-    border: 4px solid #00000018;
-    border-width: 2px;
+    border-style: solid;
+    border-color: #d7adad;
     padding: 20px;
+    padding-top: 0;
+}
+
+.form h3{
+    margin-bottom: 15px;
 }
 
 .cart{
-    background-color: #ff000018;
+    background-color: #ecc4c4;
     width: 20%;
-    height: 600px;   
+    height: 650px;   
     margin-top: 21px;
     margin-right: 3%;
     float: right;
     border-radius: 5px;
-    border: 4px solid #00000018;
-    border-width: 2px;
+    border-style: solid;
+    border-color: #d7adad;
 }
 
 .bas{
-    margin-top: 30px;
+
     margin-left: 3%;
 }
 
 .cart h2{
-    padding-top: 463px;  
+    padding-top: 20px;  
     padding-left: 20px; 
 }
 
 .btn-2{
-    height: 70px;
-    width: 225px;
+    height: 11%;
+    width: 75%;
     border-radius: 50px;
     text-align: center;
     font-weight: bold;
@@ -332,6 +399,176 @@ BUILD A SUB PAGE
     padding-top: 18px;  
     display: inline-block;
     background-color: #cbf078;
-    margin-left:    48px;
-    margin-top: 10px;
+    margin-top: 10%;
+    margin-left: 12.5%;
+}
+
+.check-label{
+    margin: 0;
+}
+
+.form-check{
+    padding-right: 3%;
+    padding-left: 0;
+}
+
+.form-left{
+    width: 45%;
+    padding: 22px;
+}
+
+.form-left input{
+    width: 60%;
+}
+
+.form-right{
+    width: 45%;
+    display: inline;
+    padding-left: 10%;
+}
+
+.itemCost{
+    font-size: 75px;
+}
+
+
+.bread{
+    width: 25%;
+    background-color: #ffe7e7;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #d7adad;
+    margin-left: 20px;
+    padding: 2%;
+    margin-right: 5%;
+}
+
+.bread input{
+    margin-bottom: 20px;
+}
+
+.ingredients-list{
+    width: 65%;
+    background-color: #ffe7e7;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #d7adad;
+    padding: 2%;
+}
+
+.ingredients-list .form-check{
+    width: 20%;
+    margin-bottom: 5px;
+}
+
+.ingredients-list label{
+    padding-left: 4px;
+}
+
+.ingredients-list .line{
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+
+.form .btn-1{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 1%;
+    padding-top: 0;
+}
+
+
+.card{
+    background-color: #d7adad;
+}
+
+.card-content{
+    background-color: #ffe7e7;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #d7adad;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////
+CHECKOUT PAGE
+//////////////////////////////////////////////////////////////////////////*/
+
+
+.checkout{
+    padding-top: 110px;
+    height: 900px;
+    width: 100%;
+    background-color: #ffffff7f;
+}
+
+.order{
+    text-align: center;
+    width: 50%;
+    height: 650px;
+    background-color: #ffffff;
+    float: left;
+    padding: 50px;
+    padding-top: 25px;
+}
+
+.payment{
+    text-align: center;
+    width: 50%;
+    height: 850px;
+    background-color: #ffffff;
+    float: right;
+    padding: 40px;
+    padding-top: 25px;
+    border-left-style: solid;
+    border-color: #d7adad;
+}
+
+.checkout .btn-1{
+    padding: 0;
+}
+
+.thanks .btn-1{
+    padding-top: 10px;
+}
+
+.checkout-cards{
+    width: 60%;
+    background-color: #fbe3e3;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #d7adad;
+    padding: 25px;
+    margin-bottom: 20px;
+    margin-left: 21%;
+}
+
+.checkout h3{
+    display: inline;
+}
+
+.buttons{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.checkout input{
+    background-color: #fbe3e3;
+}
+
+
+
+
+
+.thanks{
+    padding-top: 300px;
+    padding-right: 450px;
+    padding-left: 450px;
+    height: 600px;
+    width: 100%;
+    text-align: center;
 }
